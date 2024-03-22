@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Filpkart Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: monospace,italic;
+            background:aqua;/* Dark background color */
+            color:gold;/* Text color */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+         }
+
+        .container {
+            max-width: 500px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            background:lightgreen; /* Dark container background color */
+        }
+
+        textarea {
+            width:100%;
+            margin: bottom 20px;
+            padding: 10px;
+            border: 1px solid#ccc;
+            border-radius:6px;
+            resize:vertical;
+            font-size: 15px;
+        }
+        input[type='submit']{
+            background-color: blanchedalmond;
+            color: aqua;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: chocolate;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1> Filpkart Sentiment Analysis</h1>
+    <form action="/analyze" method="post">
+        <textarea name="text"placeholder="Enter text"></textarea><br>
+        <input type="submit"value="analyze">
+    </form>
+    
+</body>
+</html>
